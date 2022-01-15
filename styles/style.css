@@ -8,6 +8,10 @@ body{
     margin-top: 40px;
     margin-bottom: 30px;
 }
+.first-section{
+    padding: 15px;
+    justify-items: center;
+}
 .second-head{
     font-size: 2em;
 }
@@ -57,6 +61,8 @@ body{
 .second-section{
     width: 100%;
     height: 100%;
+    justify-items: center;
+    align-items: center;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
@@ -131,4 +137,34 @@ body{
     
     /* margin-right: 40px;
     padding-right: 40px; */
+}
+
+
+/* media queries */
+/* for mobiles */
+@media only screen and (max-width:688px) {
+    
+    .top-sections{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .top-sections{
+        flex-direction: column;
+    }
+    .second-section{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+
+/* for iped */
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .top-sections{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .top-sections{
+        flex-direction: column;
+    }
+    .second-section{
+        grid-template-columns: 2, 1fr;
+    }
 }
